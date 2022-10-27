@@ -1,12 +1,7 @@
-SELECT 
-    users.user_name AS usuario,
-    COUNT(q.music_id) AS qt_de_musicas_ouvidas,
-    ROUND(SUM(t.duration_seconds / 60), 2) AS total_minutos
-FROM
-    SpotifyClone.users AS history
-        INNER JOIN SpotifyClone.history_reproduction AS songs 
-        ON users.user_id = q.user_id
-        INNER JOIN SpotifyClone.musics AS t 
-        ON q.music_id = t.music_id
-GROUP BY usuario
-ORDER BY usuario;
+SELECT U.name AS `usuario`,
+IF(MAX(YEAR(H.history_date)) >= 2021, "Usuário ativo","Usuário inativo") AS `status_usuario`
+
+FROM SpotifyClone.users  AS U
+INNER JOIN SpotifyClone.history AS H ON H.user_id = U.user_id
+GROUP BY U.name
+ORDER BY U.name ASC; 

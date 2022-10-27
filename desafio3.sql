@@ -1,3 +1,4 @@
+-- Active: 1666887213015@@127.0.0.1@3307@SpotifyClone
 SELECT users.name AS usuario,
 COUNT(histoy.song_id) AS qt_de_musicas_ouvidas,
 ROUND(SUM(songs.song_duration / 60), 2) AS total_minutos
