@@ -1,8 +1,7 @@
 -- Active: 1666110835081@@127.0.0.1@3306@SpotifyClone
-DROP DATABASE SpotifyClone;
+DROP DATABASE IF EXISTS SpotifyClone;
 
 CREATE DATABASE IF NOT EXISTS SpotifyClone;
-
 
 CREATE TABLE SpotifyClone.plan(
   plan_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -117,6 +116,7 @@ VALUES
     ('Samba em Paris', 6, 267),
     ('The Bard’s Song', 7, 244),
     ('Feeling Good', 8, 100);
+
 INSERT INTO SpotifyClone.history(user_id, song_id, history_date)
 VALUES
  (1, 8, '2022-02-28 10:45:55'),
@@ -135,7 +135,6 @@ VALUES
     (8, 4, '2012-03-17 14:56:41'),
     (9, 9, '2022-02-24 21:14:22'),
     (10, 3, '2015-12-13 08:30:22');
-
 
 INSERT INTO SpotifyClone.following (user_id, artist_id)
 VALUES
