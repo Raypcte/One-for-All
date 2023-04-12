@@ -1,10 +1,11 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# README 
+
+Neste projeto utilizei uma tabela inspirada no Banco de Dados do Spotify (SpotifyClone) para revisar e e consolidar conceitos de normalização e execução de queries com o intuito de encontrar as informações solicitadas.
+
+# Habilidades 
+
+- Normalização de tabelas;
+- Popular tabelas;
+- Executar queries para encontrar informações solicitadas;
+- Utilizar comandos como AS, COUNT, ORDER BY, LIMIT, OFFSET, LIKE, IN, BETWEEN, GROUP BY, WHERE ;
+- Combinar colunas de uma ou mais tabelas com INNER JOIN;
